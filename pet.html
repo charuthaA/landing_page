@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <h1>Available Pets</h1>
+        <nav>
+            <ul>
+                <li><a href="Adoption.html">Home</a></li>
+                <li><a href="#pets">Available Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pets">
+        <h2>Available Pets</h2>
+        <div class="pet-container">
+            <div class="pet-card" onclick="showDetails('pet1')">
+                <img src="pet1.JPG" alt="Pet 1">
+            </div>
+            <div class="pet-card" onclick="showDetails('pet2')">
+                <img src="pet2.jpg" alt="Pet 2">
+            </div>
+            <div class="pet-card" onclick="showDetails('pet3')">
+                <img src="pet3.jpg" alt="Pet 3">
+            </div>
+            <div class="pet-card" onclick="showDetails('pet4')">
+                <img src="pet4.jpg" alt="Pet 4">
+            </div>
+            <div class="pet-card" onclick="showDetails('pet5')">
+                <img src="pet5.jpeg" alt="Pet 5">
+            </div>
+        </div>
+        <div id="pet-details" class="pet-details">
+            <h3 id="pet-name"></h3>
+            <p id="pet-breed"></p>
+            <p id="pet-age"></p>
+            <button id="adopt-button" style="display:none;" onclick="adoptPet()">Adopt</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Pet Adoption. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptpet.js"></script>
+</body>
+</html>
